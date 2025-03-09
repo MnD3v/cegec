@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { GlobalStateProvider } from "./context/GlobalStateContext";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,12 +24,75 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const socials = [{ icon: "facebook.png", link: "" },
+  { icon: "linkedin.png", link: "" },
+  ]
   return (
     <html lang="en">
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <GlobalStateProvider>
+          {children}
+        </GlobalStateProvider>
+        <footer className="text-white relative flex flex-col items-center bg-[url('/images/footer.jpg')] bg-cover overflow-hidden max-sm:text-sm">
+          <div className="flex justify-center bg-black/30 w-full" >
+            <div className="relative z-10 max w-full flex flex-wrap  p-4 gap-9 ">
+
+              <div>
+                <Image src="/icons/logo.png" alt="" width={90} height={90} />
+                <p className="w-80 mt-6 font-abel">Chez <span className="font-black font-rubik text-eorange">CEGEC</span>, nous mettons notre expertise au service de vos projets de construction depuis 2016. Spécialisés dans le bâtiment à usage d’habitation et commercial, nous allions savoir-faire et innovation pour offrir des réalisations de qualité, aussi bien aux particuliers qu’aux entreprises établies à travers des partenariats en sous-traitance.</p>
+                <div className=" flex gap-2">
+                  {socials.map((element) => (
+                    <div key={element.icon} className="bg-white h-10 w-10 rounded-full flex flex-col items-center justify-center">
+                      <img src={`/icons/${element.icon}`} alt="" className="h-6" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="pt-6 w-80 font-bricolage ">
+                <h3 className="text-lg font-bold">
+                  Contact
+                </h3>
+                <div className="flex items-center">
+                  <img src="/icons/phone.png" alt="" className="h-6 " />
+                  <p className="p-3">(228) 90 73 73 74 / 99 29 55 56</p>
+                </div> 
+                
+                <div className="flex items-center">
+                  <img src="/icons/mail.png" alt="" className="h-6 " />
+                  <p className="p-3">Samadominique2@gmail.com </p>
+                </div>
+
+              
+
+                
+
+
+                <div className="flex items-center">
+                  <img src="/icons/map.png" alt="" className="h-6 mx-1 " />
+                  <p className="p-3">Notre Siège social est dans le quartier Tomdè, à environ 50 metres après les affaires sociales.</p>
+                </div>
+                <p className="font-rubik font-bold">
+                N°RCCM: TG-LOM 2014 A 4488/ N°CNSS: 43153/N° FISCAL: 146289K 
+                </p>
+
+              </div>
+
+
+            </div>
+          </div>
+
+          <div className='flex justify-center h-16 items-center w-full bg-gray-500'>
+            <div className='max w-full p-4'>
+              Copyright © $2025 - All right reserved by CEGEC
+            </div>
+          </div>
+
+        </footer>
       </body>
     </html>
   );

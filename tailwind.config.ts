@@ -8,9 +8,16 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        josefin: "Josefin Sans",
+        rubik: "Rubik",
+      },
+      
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        eorange: "#FC7601",
+        egreen:"#96E903"
       },
     },
   },
