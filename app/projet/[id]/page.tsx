@@ -117,11 +117,10 @@ const DetailsProjet = () => {
                             key={element}
                             className="cursor-pointer">
                             <a 
-                            target="_blank"
                             href={`/images/projects/${element}.png`}
                             className='flex flex-col items-center sm:flex-row justify-center gap-6 pb-10'>
 
-                            <img src={`/images/projects/${element}.png`} alt="" className="h-[400px] md:h-[500px] object-cover w-auto"/>
+                            <img src={`/images/projects/${element}.png`} alt="" className="h-[400px] md:h-[500px] object-cover w-lvw max-w-[900px]"/>
                             </a>
                         </SwiperSlide>
                     ))
