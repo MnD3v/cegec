@@ -93,7 +93,7 @@ const About = () => {
                         <p className='text-7xl font-bold'>
                            100+
                         </p>
-                        <p>Employés dans l'equipe actuel</p>
+                        <p>Collaborateurs</p>
                     </div>
                  </div>
                  <div className='relative items-center'>
