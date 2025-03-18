@@ -4,7 +4,7 @@ const Chiffres = () => {
 
     const chiffres = [
         { titre: "10+", subtitre: "Projets", description: " ont été correctements realisés par CEGEC" },
-        { titre: "8", subtitre: "ans", description: " d'impact et de croissance continue dans la construction" },
+        { titre: "10", subtitre: "ans", description: " d'impact et de croissance continue dans la construction" },
         { titre: "98", subtitre: "%", description: "de satisfaction de nos clients devient 98% de nos clients se déclarent pleinement satisfaits des services et des résultats obtenus" },
     ]
     return (

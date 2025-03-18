@@ -23,46 +23,46 @@ const Presentation = () => {
   }, []);
   return (
     <div
-      style={{  backgroundImage: "url('images/bg-1.jpg')", backgroundSize: "cover" }}
+      style={{ backgroundImage: "url('images/bg-1.jpg')", backgroundSize: "cover" }}
       className={`w-[vw] flex flex-col items-center text-white`}>
 
       {/* <img src="images/bg-1.jpg" alt="" className='absolute z-0'/> */}
       <div
-        style={{  }}
+        style={{}}
         className='bg-black/40  relative w-full'>
         <AppBar></AppBar>
         <div className=' flex justify-center'>
           <div className='max mb-14 w-full'>
             <motion.p
-             variants={Animations.leftToRight({ duration: 0.6, delay: .6 })}
-             initial="hidden"
-             whileInView="show"
-             viewport={{ once: true }}
-            className='text-4xl md:text-7xl font-rubik font-semibold max-w-[700px]'>
-              Créez le bâtiment que vous souhaitez avec 
+              variants={Animations.leftToRight({ duration: 0.6, delay: .6 })}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className='text-4xl md:text-7xl font-rubik font-semibold max-w-[700px]'>
+              Réalisez le bâtiment de vos rêves avec
             </motion.p>
             <motion.p
-             variants={Animations.scale({ duration: 0.6, delay: .6 })}
-             initial="hidden"
-             whileInView="show"
-             viewport={{ once: true }}
-            
-            className='font-rubik text-[#96E903] font-black text-5xl md:text-8xl'> CEGEC</motion.p>
+              variants={Animations.scale({ duration: 0.6, delay: .6 })}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+
+              className='font-rubik text-[#96E903] font-black text-5xl md:text-8xl'> CEGEC</motion.p>
             <motion.p
-             variants={Animations.scale({ duration: 0.6, delay: .6 })}
-             initial="hidden"
-             whileInView="show"
-             viewport={{ once: true }}
-            className='w-96 my-9'>
-              Concevez et réalisez le bâtiment de vos rêves avec <span className='font-bold text-eorange italic'>CEGEC</span>. Qualité, innovation et durabilité au service de vos projets.
+              variants={Animations.scale({ duration: 0.6, delay: .6 })}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className='w-96 my-9'>
+              Nous mettons à votre disposition nos experts dans le domaine de la construction de bâtiment, de l'espace vert et de forage pour vous accompagner a avoir des ouvrages pérenne
             </motion.p>
 
             <motion.div
-             variants={Animations.leftToRight({ duration: 0.6, delay: .6 })}
-             initial="hidden"
-             whileInView="show"
-             viewport={{ once: true }}
-            className='relative items-center'>
+              variants={Animations.leftToRight({ duration: 0.6, delay: .6 })}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className='relative items-center'>
               <a href="#contact" className='inline-block px-6 py-4 w-auto bg-eorange font-rubik font-semibold'>
                 Commencer la consultation
 
@@ -78,7 +78,7 @@ const Presentation = () => {
 
 
       </div>
- 
+
 
 
 

@@ -75,7 +75,8 @@ const About = () => {
                         whileInView="show"
                         viewport={{ once: true }}
                     >
-                        Nous concevons et réalisons des infrastructures solides et durables, alliant expertise technique et innovation. Du gros œuvre aux finitions, nous assurons des constructions de qualité, adaptées à vos besoins.
+                      Nous concevons et réalisons des infrastructures solide et durables à votre goût, alliant expertise technique et innovation. 
+                      Du gros œuvre aux finitions, nous assurons la pérennité de vos constructions.
 
                     </motion.p>
 

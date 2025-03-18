@@ -3,37 +3,43 @@ import Animations from "./utils/item";
 
 const Projets = () => {
     const projects = [
-        {
+        { 
+            id: 1,
             title: "BATIMENT SCOLAIRE",
             description:
                 "CONSTRUCTION D'UN BATIMENT SCOLAIRE DE 03 CLASSES + BUREAU ET MAGASIN A L'EPP NATIGOU (REGION DE LA SAVANE)",
             image: "/image/image.png",
         },
         {
+            id: 2,
             title: "VILLA",
             description:
                 "CONSTRUCTION D'UNE VILLA R+1 A ATEDA (REGION DE LA KARA)",
             image: "/image/villa.png",
         },
         {
+            id: 3,
             title: "USP NADOBA",
             description:
                 "REHABILITATION ET EXTENSION DE L'UNITE DE SOINS PERIPHERIQUE (USP) NADOBA (REGION KARA)",
             image: "/image/usp_nadoba.png",
         },
         {
+            id:4,
             title: "BLOC PÉDAGOGIQUE CEG PESSIDE",
             description:
                 "ACHEVEMENT D'UN BLOC PEDAGOGIQUE COMPOSÉ DE 04 SALLES DE CLASSE + UN BLOC LABORATOIRE ET UN BLOC LATRINE À 6 CABINES AU CEG PESSIDE (PREFECTURE DE LA KERAN)",
             image: "/image/ceg_pesside.png",
         },
         {
+            id:5,
             title: "ATELIER CFTP PAGOUDA",
             description:
                 "CONSTRUCTION D'UN ATELIER AU COLLEGE TECHNIQUE ET PROFESSIONNEL (CFTP) DE PAGOUDA (PREFECTURE DE LA BINAH)",
             image: "/image/cftp_pagouda.png",
         },
         {
+            id:6,
             title: "USP ASSERE",
             description:
                 "REHABILITATION ET EXTENSION DE L'UNITE DE SOINS PERIPHERIQUE (USP) ASSERE DANS LA PREFECTURE DE LA BINAH",
@@ -52,15 +58,15 @@ const Projets = () => {
                     {
                         projects.map((element, index) => {
                             return (
-                                <motion.div key={element.title}
+                                <motion.a key={element.title}
+                                href={`/projet/${element.id}`}
                                 variants={Animations.bottomToTop({ duration: 0.3*index, delay: .6 })}
                                 initial="hidden"
                                 whileInView="show"
                                 viewport={{ once: true }}
                                 >
-                                    <a
+                                    <div
 
-                                        href={`./images/projects/${index + 1}.png`}
                                         style={{ backgroundImage: "url('./images/projects/" + (index + 1) + ".png" }}
                                         className="flex flex-col justify-end h-80 w-full ">
 
@@ -70,8 +76,8 @@ const Projets = () => {
                                             <p className="text-white font-bold">{element.description}</p>
 
                                         </div>
-                                    </a>
-                                </motion.div>
+                                    </div>
+                                </motion.a>
 
                             );
                         })

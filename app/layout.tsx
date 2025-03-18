@@ -64,7 +64,7 @@ export default function RootLayout({
                 
                 <div className="flex items-center">
                   <img src="/icons/mail.png" alt="" className="h-6 " />
-                  <p className="p-3">Samadominique2@gmail.com </p>
+                  <p className="p-3">cegec2016togo@yahoo.com </p>
                 </div>
 
               

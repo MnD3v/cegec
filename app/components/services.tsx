@@ -28,18 +28,23 @@ const Services = () => {
     const fonctionnalites = [
         {
             icon: "/icons/service-icon-1-1.svg",
-            title: "Construction Générale",
-            description: "Nous offrons des services de construction générale, couvrant tous les aspects de la réalisation de projets, de la conception à la livraison, en garantissant qualité et respect des délais.",
+            title: "Genie civil",
+            description: "Nous mettons à votre disposition une équipe complète de spécialiste pour la réalisation de vos projets de construction de batiment garantissant qualité, pérennité  et respect de délai d'exécution.",
         },
         {
-            icon: "/icons/service-icon-1-2.svg",
-            title: "Construction de bâtiment",
-            description: "Spécialisés dans la construction de bâtiments, nous assurons la réalisation de structures solides et durables, adaptées à vos besoins spécifiques.",
+            icon: "/icons/forage.png",
+            title: "Forage",
+            description: "De l'étude géotechnique et hydrogéologique a la foration et équipement adapté de vos forages, laissez vous guider par nos experts.",
+        },
+        {
+            icon: "/icons/espace-vert.png",
+            title: "ESPACE VERT",
+            description: "Es ce que vous saviez que l'espace vert réduit le stress et améliore le bien être? Et bien ne ratez pas l'opportunité d'avoir un petit jardin dans votre maison avec des plantes a vertu spéciale que nos jardinier porterons a votre connaissance pour une mise en œuvre.",
         },
         {
             icon: "/icons/service-icon-1-3.svg",
-            title: "Matériels de qualité",
-            description: "Nous utilisons exclusivement des matériaux de haute qualité pour garantir la longévité et la performance de chaque projet.",
+            title: "MATERIEL ET EQUIPEMENT",
+            description: "Le matériel a une importance capital dans la réussite des projets.. c'est pour ça qu'à CEGEC nous mettrons a la disposition des projets que vous nous confierait un matériel adapté, suffisent et de pointe.",
         }
     ];
 

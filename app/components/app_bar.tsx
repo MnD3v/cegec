@@ -83,7 +83,7 @@ const AppBar = () => {
 
                         <div>
                             <p className="font-semibold">+228 90 73 73 74</p>
-                            <p>Samadominique2@gmail.com </p>
+                            <p>cegec2016togo@yahoo.com</p>
                         </div>
 
                     </div>
