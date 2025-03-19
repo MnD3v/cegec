@@ -57,7 +57,7 @@ const About = () => {
                             initial="hidden"
                             whileInView="show"
                             viewport={{ once: true }}
-                            className='font-semibold text-e_orange font-rubik'>BIENVENUE CHEZ CEGEC, Consortium des Entreprises de Génie Civil</motion.h2>
+                            className='font-semibold text-e_orange font-rubik'>BIENVENUE CHEZ <span className='font-black text-eorange'>CEGEC</span> (Consortium des Entreprises de Génie Civil)</motion.h2>
                     </div>
 
                     <motion.p
