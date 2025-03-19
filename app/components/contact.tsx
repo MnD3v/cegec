@@ -46,7 +46,7 @@ const Contact = () => {
                     <img src={`/icons/c-map.png`} alt="" className='h-10 md:h-14 self-start' />
 
                     <h3>Adresse</h3>
-                    <p style={{ whiteSpace: 'pre-wrap' }} className=''>Kara-Tomdè </p>
+                    <p style={{ whiteSpace: 'pre-wrap' }} className=''>RN 19 Kara-kabou juste avant l'entrée principale du centre de formation donbosco</p>
 
 
                 </motion.div>
