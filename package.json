@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate:robots": "node generate-robots.js",
+    "generate:sitemap": "node generate-sitemap.js"
   },
   "dependencies": {
     "framer-motion": "^12.4.7",
