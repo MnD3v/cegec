@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: 'Découvrez CEGEC, une agence spécialisée en construction et ingénierie. Nous offrons des solutions innovantes en gestion de projet, génie civil, architecture et travaux publics pour réaliser vos projets avec expertise et qualité.',
     images: [
       {
-        url: 'https://i.ibb.co/yFfHQQ2f/Group-2-2.png',
+        url: 'https://i.ibb.co/dwwsBv08/Group-2-3.png',
         width: 1200,
         height: 630,
         alt: 'CEGEC',
